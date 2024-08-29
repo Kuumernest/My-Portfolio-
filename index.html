@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script
+      src="https://kit.fontawesome.com/c4254e24a8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo1.png" alt="logo" />
+          <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact" class="shift">Contact</a></li>
+            <li>
+              <div>
+                <input
+                  type="text"
+                  name=""
+                  id="search-input"
+                  placeholder="Search..."
+                  onkeyup="search();"
+                />
+                <button id="btn-clear">Clear</button>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="search-container"></div>
+        <div class="header-text">
+          <p>Fullstack Developer</p>
+          <h1>
+            Hi, I'm <span>Kuum</span> <br />
+            Ernest From Cameroon
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/IMG-20240818-WA0009.jpg" alt="user" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              My name is Kuum Ernest Ngong, I am a dedicated software
+              engineering student at NFONAP Higher Institute of Education and
+              Professional Studies. My core belief is that with the right
+              resources and direction, everything is possible through hardwork
+              and determination, that's why I strive to achieve excellence in
+              all I do.
+            </p>
+            <p>
+              I rely on the guidance of God Almighty, believing that with faith,
+              every height is attainable. I am pushed by Innovation and
+              creativitry fueled by my passion for exploring new ideas and
+              daring fearful adventures which gives me the opportunity to
+              contribute positively to social change.
+            </p>
+            <p>
+              Equally, I am driven by a love for helping others succeed, always
+              finding joy in sharing their truimphs and making a meaningful
+              impact in their lives.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>UI?UX</span> <br />
+                  Designing Users Interfaces
+                </li>
+                <li>
+                  <span>Graphics</span> <br />
+                  Designing Graphics, ranging from flavicons to Wall Murals and
+                  Wraps/Event Banners.
+                </li>
+                <li>
+                  <span>Back-end</span> <br />
+                  Designing and Managing of large Databases.
+                </li>
+                <li>
+                  <span>Installations</span> <br />
+                  Installation of Security Cameras and Solar kits for domestic
+                  and street use.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Teaching Staff</span> <br />
+                  Developing and delivering lessons in Mathematics, Biology and
+                  Chemistry for six years <span>(2012-2015, 2021-2024)</span>.
+                </li>
+                <li>
+                  <span>Business</span> <br />
+                  Sold divers articles such as; slippers, plates, dresses for
+                  four years <span>(2018-2022)</span>.
+                </li>
+                <li>
+                  <span>Internships</span> <br />
+                  Three months Internship at Eschosys Technology in Web
+                  designing and graphic designing
+                  <span>(June-September 2024)</span>. <br />
+                  Three months of Internship at SNG-Technologies for Conception
+                  and Installation of solar kits
+                  <span>(December 2019-Febraury 2020)</span>.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Ordinary Level</span> <br />
+                  G C E Ordinary Level Science at GSS Weh
+                  <span>(2005- 2010)</span>.
+                </li>
+                <li>
+                  <span>Advanced Level</span> <br />
+                  G C E Advanced Level Science at G H S Wum
+                  <span>(2010-2012)</span>.
+                </li>
+                <li>
+                  <span>Higher Education</span> <br />
+                  Microbiology Degree at the university of Bamenda
+                  <span>(2015-2018)</span>
+                </li>
+                <li>
+                  <span>Proffessional Studies</span> <br />
+                  Software Engineering at NFONAP Higher Institute of Education
+                  and Proffessional Studies <span>(2024.......)</span>.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <img src="images/code.png" class="icon" />
+            <h2>Web Design</h2>
+            <p>
+              I create customised, visually engaging and user-friendly websites
+              tailored to my client's specific needs.
+            </p>
+            <a
+              href="https://www.smashingmagazine.com/2021/03/complete-guide-accessible-front-end-components/"
+              >Learn more...</a
+            >
+          </div>
+          <div>
+            <img src="images/logo.png" class="icon" />
+            <h2>Graphic Design</h2>
+            <p>
+              I create visually compelling and proffessional designs that
+              communicate my client's messages effectively.
+            </p>
+            <a href="https://www.canva.com/learn">Learn more...</a>
+          </div>
+          <div>
+            <img
+              src="images/add-database-button-for-interface.png"
+              class="icon"
+            />
+            <h2>Database Design</h2>
+            <p>
+              I create structured, efficient and scalable databases tailored to
+              my client's specific needs.
+            </p>
+            <a href="https://www.mysqltutorial.org">Learn more...</a>
+          </div>
+          <div>
+            <img src="images/cctv-camera.png" class="icon" />
+            <h2>Installation of Security cameras</h2>
+            <p>
+              I set up complete, easy to use, and customised surveillance
+              systems tailored to meet the security needs of my clients.
+            </p>
+            <a href="https://butterflymx.com/blog/cctv-installation/"
+              >Learn more...</a
+            >
+          </div>
+          <div>
+            <img src="images/system.png" class="icon" />
+            <h2>Installation of Solar kits</h2>
+            <p>
+              I set up customised solar energy systems tailored to the energy
+              need of my customers for both domestic and street lighting.
+            </p>
+            <a href="https://www.solarreviews.com">Learn more...</a>
+          </div>
+          <div>
+            <img
+              src="images/teacher-sitting-on-a-chair-reading-for-students-children-sitting-on-the-floor-in-front-of-him.png"
+              class="icon"
+            />
+            <h2>Teaching</h2>
+            <p>
+              I provide personalised and effective instructions and lessons in
+              Mathematics, Chemistry and Biology tailored to meet the needs of
+              the GCE board and the Ministry of secondary eduction.
+            </p>
+            <a href="https://www.teachthought.com/pedagogy">Learn more...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/business card.png" alt="" />
+            <div class="layer">
+              <h3>Business Card Design</h3>
+              <p>
+                Customised business card for individuals tailored to communicate
+                details about their businesses in a summarised way.
+              </p>
+              <a href="https://www.canva.com/business-cards/"
+                ><img src="images/external-link.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/the clique 2-01.png" alt="" />
+            <div class="layer">
+              <h3>Posters Design</h3>
+              <p>
+                Customised event posters for individuals tailored to communicate
+                details about their event programs and show in a summarised way.
+              </p>
+              <a
+                href="https://webneel.com/webneel/blog/25-creative-and-beautiful-poster-design-examples-your-inspiration"
+                ><img src="images/external-link.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/The B-01.png" alt="" />
+            <div class="layer">
+              <h3>Logo</h3>
+              <p>
+                Customised Logo for individuals tailored to brand their
+                businesses or products in a summarised way.
+              </p>
+              <a href="https://www.outfrontmedia.com/"
+                ><img src="images/external-link.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/solar2.jpg" alt="" />
+            <div class="layer">
+              <h3>Installation of Solar kits</h3>
+              <p>
+                Customised solar energy system for individuals tailored to
+                provide 24/7 electricity for their businesses and homes in a
+                relatively cheaper price in the long run.
+              </p>
+              <a href="https://www.solarreviews.com/"
+                ><img src="images/external-link.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/Facebook_creation_484926127765984.jpeg" alt="" />
+            <div class="layer">
+              <h3>Installation of security cameras</h3>
+              <p>
+                Customised surveillance system for individuals tailored to watch
+                over their homes 24/7 through their smart phones even miles away
+                from home.
+              </p>
+              <a href="https://cue-support.nl/"
+                ><img src="images/external-link.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/web.jpg" alt="" />
+            <div class="layer">
+              <h3>Website Design</h3>
+              <p>
+                Customised website design tailored to boost and attract desired
+                audience according to the specificity of the client.
+              </p>
+              <a
+                href="https://webmyday.nl/?qcid=16448453755&gad_source=1&gclid=CjwKCAjw_ZC2BhAQEiwAXSgClkgf5L0FPOH_l3EVXK8Ek4IRvnR5q4CjMzh-2tYar-iaQ0D3mS3NCBoCA1cQAvD_BwE"
+                ><img src="images/external-link.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+        <p class="btn">
+          <a href="https://wdo.org/">See More</a>
+        </p>
+      </div>
+    </div>
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <img src="images/Gmail.png" alt="" /><a id="call"
+                href="mailto:kuumernest.ken7@gmail.com"
+              >
+                Email Me</a
+              >
+            </p>
+            <p>
+              <img src="images/call-icon.jpg" alt="" /><a
+                href="tel:+237 672 447 979"
+               id="call" >Call Me</a
+              >
+            </p>
+            <div class="social-icons">
+              <a href="https://wwww.facebook.com/ernest.kuum?mibextid=ZbWKwL"
+                ><img src="images/facebook-logo.png" alt=""
+              /></a>
+              <a href="https://wa.me/+237672447979"
+                ><img src="images/whatsapp icon.png" alt=""
+              /></a>
+              <a href="https://www.linkedin.com/in/kuum-ernest-ngong-86614221a/"
+                ><img src="images/317750_linkedin_icon.png" alt=""
+              /></a>
+              <a href="https://www.instagram.com/ernestkuum/?hl=en"
+                ><img src="images/18246125_v982-d3-04.jpg" alt=""
+              /></a>
+            </div>
+            <p class="btn">
+              <a href="Kuum Ernest Ngong CV.pdf" download>Download CV</a>
+            </p>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <p class="btn"><button type="submit" id="btn">Submit</button></p>
+            </form>
+
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2024 Kuum Ernest</p>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzoPTr6GO78_8QvoDldPrDiTt0e30qTV1xPP01CX8bfqpkR1rKk1pjlaze-emTNj4M/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 3000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+
+      document
+        .getElementById("search-input")
+        .addEventListener("input", function () {
+          let filter = this.value.toLowerCase();
+          let portfolioItems = document.querySelectorAll(".portfolio-item");
+
+          portfolioItems.forEach(function (item) {
+            let title = item.getAttribute("data-title").toLowerCase();
+
+            if (title.includes(filter)) {
+              item.classList.remove("hidden");
+            } else {
+              item.classList.add("hidden");
+            }
+          });
+        });
+    </script>
+    
+  </body>
+</html>
